@@ -17,11 +17,7 @@ Unless otherwise noted, file and directory names refer to this repository.
 
 2. Return to the 1st Edition top-level directory. Do a make. This will do several things.  It will build tools/mkfs, tools/ml and tools/apout/apout.
 3. 
-   These tools are required to build the filesystems for 1e UNIX, and the kernel. It will create kernel sources with some necessary patches, assemble the kernel and build a bootable Simh memory image which is installed into
-   the images directory.  Finally, the make will build the rf0.dsk, rk0.dsk
-   and tape images and install these in the images directory. You can also do
-   a "make clean" to clean out the images/ and build/ directories. A "make
-   clobber" will clean out the images/, build/  and tools/ directories.
+   These tools are required to build the filesystems for 1e UNIX, and the kernel. It will create kernel sources with some necessary patches, assemble the kernel and build a bootable Simh memory image which is installed into the images directory.  Finally, the make will build the rf0.dsk, rk0.dsk and tape images and install these in the images directory. You can also do a "make clean" to clean out the images/ and build/ directories. A "make clobber" will clean out the images/, build/  and tools/ directories.
 
 Running 1st Edition UNIX
 ------------------------
@@ -84,14 +80,26 @@ Repository Layout
 -----------------
 
 pages/		- OCR'd pages from the PreliminaryUnixImplementation document
+   
 rebuilt/	- kernel source rebuilt from the OCR'd pages, as asm files
+   
 patches/	- patches to rebuilt/ files to get kernel to run
+   
 fs/		- userland binaries and files, used to make rf0.dsk and rk0.dsk
+   
 src/		- source code for userland: there is not much available
+   
 tools/		- tools and scripts to build the kernel and filesystem
+   
 build/		- build area: patched kernel files, patched filesystems
+   
 images/		- final disk and tape images to be used by the Simh simulator
+   
 misc/		- misc. files, e.g. the Simh patch for KE11A support
+   
 notes/		- notes on the work done to get 1e UNIX to run again
+   
 diffs/		- Differences between pages/* and the high quality OCR
+   
                   done by James Markevitch.  Includes headers and footers.
+   
