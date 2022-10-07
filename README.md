@@ -25,12 +25,19 @@ Running 1st Edition UNIX
 1. Run ./simh.cfg which starts the pdp11 simulator. You should see this:
 
      PDP-11 simulator V3.8-0
+     
      ./simh2.cfg> #!tools/pdp11
+     
      Unknown command
+     
      Disabling CR
+     
      Disabling XQ
+     
      RF: buffering file in memory
+     
      TC0: 16b format, buffering file in memory
+     
      Listening on port 5555 (socket 7)
 
    You will receive a login: prompt:
@@ -40,20 +47,23 @@ Running 1st Edition UNIX
 3. Type in an ls -l command. You should see something like this:
 
    total    6
+   
     43 sdrwr-  2 root    620 Jan  1 00:00:00 bin
+   
     42 sdrwr-  2 root    250 Jan  1 00:00:00 dev
+   
    104 sdrwr-  2 root    110 Jan  1 00:00:00 etc
+   
    114 sdrwr-  2 root     50 Jan  1 00:00:00 tmp
+   
     41 sdrwr-  7 root     70 Jan  1 00:00:00 usr
+   
 
-4. To change directories, use chdir, e.g. chdir /usr. The only editor installed
-   is `ed'. You can find an ed tutorial in notes/edtut.txt.
+4. To change directories, use chdir, e.g. chdir /usr. The only editor installed is `ed'. You can find an ed tutorial in notes/edtut.txt.
 
-5. To log in multiple times, telnet to localhost port 5555.  The system
-   is configured to allow 8 remote logins.
+5. To log in multiple times, telnet to localhost port 5555.  The system is configured to allow 8 remote logins.
 
-6. To shut the system down, enter ctrl-E to stop the simulator, and q to quit.
-   You do not need to sync the system before shutdown.
+6. To shut the system down, enter ctrl-E to stop the simulator, and q to quit. You do not need to sync the system before shutdown.
 
 Documentation
 -------------
@@ -100,6 +110,5 @@ misc/		- misc. files, e.g. the Simh patch for KE11A support
 notes/		- notes on the work done to get 1e UNIX to run again
    
 diffs/		- Differences between pages/* and the high quality OCR
-   
-                  done by James Markevitch.  Includes headers and footers.
+
    
