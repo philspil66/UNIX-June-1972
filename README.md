@@ -1,8 +1,6 @@
-# UNIX-June-1972
+# UNIX June 1972
 
-Welcome to the 1st Edition UNIX repository. Here you will find the kernel
-source code and userland binaries which will allow you to run 1e UNIX on
-a PDP-11 simulator.
+Welcome to the 1st Edition UNIX repository. Here you will find the kernel source code and userland binaries which will allow you to run 1e UNIX on a PDP-11 simulator.
 
 Build Instructions
 ------------------
