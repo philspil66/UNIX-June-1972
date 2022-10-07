@@ -9,18 +9,15 @@ Build Instructions
 Unless otherwise noted, file and directory names refer to this repository.
 
 1. Download the source code for the Simh simulator from here:
-   http://simh.trailing-edge.com/. Make sure that you download
-   version 3.8-0 or later; earlier versions need patches to work.
+   http://simh.trailing-edge.com/. 
+   Make sure that you download version 3.8-0 or later; earlier versions need patches to work.
 
 2. Unpack Simh somewhere. Make the BIN/ directory in Simh at the top level.
-   Do make pdp11 to make the pdp11 simulator in the BIN/ directory. Copy
-   the BIN/pdp11 executable into the tools/ directory.
+   Do make pdp11 to make the pdp11 simulator in the BIN/ directory. Copy the BIN/pdp11 executable into the tools/ directory.
 
-2. Return to the 1st Edition top-level directory. Do a make. This will do
-   several things.  It will build tools/mkfs, tools/ml and tools/apout/apout.
-   These tools are required to build the filesystems for 1e UNIX, and the
-   kernel. It will create kernel sources with some necessary patches, assemble
-   the kernel and build a bootable Simh memory image which is installed into
+2. Return to the 1st Edition top-level directory. Do a make. This will do several things.  It will build tools/mkfs, tools/ml and tools/apout/apout.
+3. 
+   These tools are required to build the filesystems for 1e UNIX, and the kernel. It will create kernel sources with some necessary patches, assemble the kernel and build a bootable Simh memory image which is installed into
    the images directory.  Finally, the make will build the rf0.dsk, rk0.dsk
    and tape images and install these in the images directory. You can also do
    a "make clean" to clean out the images/ and build/ directories. A "make
